@@ -40,37 +40,41 @@ DipolarCalc implements analytical expressions for these quantities, allowing for
 
 ## Algorithms for calculating parameters
 
-The software implements the following computational features:
+### 1. Calculation of the dipole moment of an individual chemical bond
 
-1. **Calculation of the dipole moment of an individual chemical bond**
-   
-   $$
-   \mu = |\Delta\chi_{ab}| \cdot d,
-   $$
-   
-   where $\mu$ is the dipole moment of the bond (measured in debyes, D), $\Delta\chi_{ab}$ is the difference in electronegativity of two atoms forming the chemical bond (measured in statcoulombs, ESU), and $d$ is the length of the chemical bond (measured in angstroms, Å).
+$$
+\mu = |\Delta\chi_{ab}| \cdot d,
+$$
 
-2. **Calculation of the total dipole moment of a group of three conjugated atoms**, accounting for the angle between bonds:
-   
-   $$
-   \mu_{\text{tot}} = \sqrt{\mu_1^2 + \mu_2^2 - 2\mu_1\mu_2 \cos \alpha},
-   $$
-   
-   where $\mu_1, \mu_2$ are the dipole moments of the two bonds and $\alpha$ is the angle between the chemical bonds.
+where $\mu$ is the dipole moment of the bond (measured in debyes, D), $\Delta\chi_{ab}$ is the difference in electronegativity of two atoms forming the chemical bond (measured in statcoulombs, ESU), and $d$ is the length of the chemical bond (measured in angstroms, Å).
 
-3. **The total bond dipole moment of an FTA** is defined as the geometric mean of the bond dipole moments of all groups of three conjugated atoms in the FTA structure:
-   
-   $$
-   \mu_{\mathrm{FTA}} = \left(\prod_{i = 1}^{n} \mu_{i}\right)^{\frac{1}{n}},
-   $$
-   
-   where $n$ is the number of groups in the FTA and $\mu_i$ is the dipole moment of each group.
+### 2. Calculation of the total dipole moment of a group of three conjugated atoms
 
-4. **Polarized state** $P$ is equal to the total dipole moment $\mu$ of a unit of the substance volume $V$ (the volume of a sphere with a radius equal to the chemical bond length of the central atom in the FTA), which arises during its polarization. The quantitative characteristic of dielectric polarization (measured in C/m²) is:
-   
-   $$
-   P = \frac{\mu}{V}.
-   $$
+The calculation accounts for the angle between bonds:
+
+$$
+\mu_{\text{tot}} = \sqrt{\mu_1^2 + \mu_2^2 - 2\mu_1\mu_2 \cos \alpha},
+$$
+
+where $\mu_1, \mu_2$ are the dipole moments of the two bonds and $\alpha$ is the angle between the chemical bonds.
+
+### 3. The total bond dipole moment of an FTA
+
+It is defined as the geometric mean of the bond dipole moments of all groups of three conjugated atoms in the FTA structure:
+
+$$
+\mu_{\mathrm{FTA}} = \left(\prod_{i = 1}^{n} \mu_{i}\right)^{\frac{1}{n}},
+$$
+
+where $n$ is the number of groups in the FTA and $\mu_i$ is the dipole moment of each group.
+
+### 4. Polarized state
+
+The polarized state $P$ is equal to the total dipole moment $\mu$ of a unit of the substance volume $V$ (the volume of a sphere with a radius equal to the chemical bond length of the central atom in the FTA), which arises during its polarization. The quantitative characteristic of dielectric polarization (measured in C/m²) is:
+
+$$
+P = \frac{\mu}{V}.
+$$
 
 **Units for converting the dimensions of parameters:**
 
