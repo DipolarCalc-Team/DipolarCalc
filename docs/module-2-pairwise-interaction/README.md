@@ -27,13 +27,13 @@ The basic foundation for calculating the structural strength of supramolecular c
 For the pair **FTA₁ → FTA₂**:
 
 $$
-\chi_2 = \frac{4\pi\,P_2\,q_2\,(r_1+r_2)^2}{V_1\,q_1\,e \;-\; 4\pi\,P_2\,q_2\,(r_1+r_2)^2}.
+\chi_2 = \frac{4\pi P_2 q_2 (r_1+r_2)^2}{V_1 q_1 e - 4\pi P_2 q_2 (r_1+r_2)^2}.
 $$
 
 For the pair **FTA₂ → FTA₁** (analogously):
 
 $$
-\chi_1 = \frac{4\pi\,P_1\,q_1\,(r_1+r_2)^2}{V_2\,q_2\,e \;-\; 4\pi\,P_1\,q_1\,(r_1+r_2)^2}.
+\chi_1 = \frac{4\pi P_1 q_1 (r_1+r_2)^2}{V_2 q_2 e - 4\pi P_1 q_1 (r_1+r_2)^2}.
 $$
 
 Mean polarizability:
@@ -45,14 +45,14 @@ $$
 ### 2. Potential energy $U$ of the pair interaction of FTA without electron-shell repulsion
 
 $$
-U = \frac{1}{2}\cdot\frac{K\,q_1\,q_2\,e^2}{(r_1+r_2)\,(1+\chi_{\text{avg}})}.
+U = \frac{K q_1 q_2 e^2}{2 (r_1+r_2)(1+\chi_{\text{avg}})}.
 $$
 
 ### 3. Potential energy $U$ of the pair interaction of FTA taking into account electron-shell repulsion
 
 $$
-U = \frac{1}{2}\cdot\frac{K\,q_1\,q_2\,e^2}{(r_1+r_2)\,(1+\chi_{\text{avg}})}
-    \left(1 - q_1 q_2\,\frac{|r_1-r_2|}{r_1+r_2}\right).
+U = \frac{K q_1 q_2 e^2}{2 (r_1+r_2)(1+\chi_{\text{avg}})}
+    \left(1 - q_1 q_2 \frac{|r_1-r_2|}{r_1+r_2}\right).
 $$
 
 ---
