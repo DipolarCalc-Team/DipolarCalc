@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="DipoleMoment.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="DipoleMoment" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="DipoleMoment" version="2.0.2.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="DipoleMoment.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -78,26 +78,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DipoleMoment.exe" size="44480">
-      <assemblyIdentity name="DipoleMoment" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DipoleMoment.exe" size="44992">
+      <assemblyIdentity name="DipoleMoment" version="2.0.2.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FDmzDSSaZ6IM5YewJQQr6oRMTBXCVTKE+nXpb0Qv638=</dsig:DigestValue>
+        <dsig:DigestValue>KciCuaVKjTWONydTbOHXTjGwu8oOmwsiglmo42nzYiQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru-RU\DipoleMoment.resources.dll" size="5632">
-      <assemblyIdentity name="DipoleMoment.resources" version="1.0.0.0" language="ru-RU" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru-RU\DipoleMoment.resources.dll" size="6144">
+      <assemblyIdentity name="DipoleMoment.resources" version="2.0.2.0" language="ru-RU" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>t6ccfps4NGZuh59cmZwz5TQ9IgNG2hei/H9e1RW0on4=</dsig:DigestValue>
+        <dsig:DigestValue>MfunnRhz/gexZMXC/ZsBDXnP9lU7rvRc5Y87UxMJFU0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
